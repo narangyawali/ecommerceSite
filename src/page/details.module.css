@@ -1,0 +1,44 @@
+
+.card {
+
+    background-color:  aliceblue;
+}
+.container{
+	display: flex;
+    flex-wrap: wrap;
+	flex-direction: row;
+    padding-bottom: 20px;
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+}
+.center{
+text-align: center;
+}
+
+
+img{
+    display: block;
+    border: 1px solid red;
+    margin: 0px auto;
+}
+
+div >h2{
+    float:right;
+    margin-right: 15px;
+}
+.actions{
+	clear: both;
+	border: 1px solid rebeccapurple;
+    display: flex;
+    justify-content: space-around;
+}
+
+.actions > input{
+    font-size: larger;
+    width: 60px;
+    height: 35px;
+}
