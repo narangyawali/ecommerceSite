@@ -9,7 +9,7 @@ import { ContextData } from "../context/context";
 
 function Details() {
 const data = useContext(ContextData)
-  const id = useContext(ContextData).present -1
+  const id = useContext(ContextData).present 
 
   return (
     <>
@@ -22,16 +22,17 @@ const data = useContext(ContextData)
           </ul>
         </div>
         <h1 className={style.center}>{storeProducts[id].title}</h1>
-        <img className= {style} src={`src/assets/img/product-${id +1}.png`} alt="image" />
+        <img className= {style} src={`src/assets/img/product-${id }.png`} alt="image" />
         <div>
           <h2>{storeProducts[id].price} $</h2>
         </div>
         
         <div className={style.actions}>
-          <input type="button" value=" - 1" onClick={()=>{data.dispatchItems({type:"inc",})}} />
+          <input type="button" value=" - 1" onClick={()=>{data.dispatchItems({id:data.present,type:"dec"})}} />
           <h3>{data.getIndividual(data.present)?.[0]}</h3>
-          <input type="button" value=" + 1" onClick={()=>{data.dispatchItems({id:data.present,type:"dec"})}} />
+          <input type="button" value=" + 1" onClick={()=>{data.dispatchItems({id:data.present,type:"inc"})}} />
         </div>
+        <h3 className={style.float}>{data.getIndividual(data.present)[1]} $</h3>
       </div>
     </>
   );

@@ -1,5 +1,6 @@
 import React from 'react'
 import {  useContext } from "react";
+import { Link } from 'react-router-dom';
 import styles from "./singleProduct.module.css"
 import {ContextData } from "../context/context"
 
@@ -19,6 +20,7 @@ const handleClick=(e,id)=>{
 
   return (
     <>
+    <Link to="/details"> 	
     <div className= {styles.card} onClick={e=> handleClick(e,props.item.id)} >
     <h3>{props.item.title}</h3>
     <img  className={styles.img_card} src={`src/assets/${props.item.img}`} alt="image" />
@@ -26,6 +28,7 @@ const handleClick=(e,id)=>{
 			<h4>Price : $ {props.item.price}</h4>
    
     </div>
+    </Link>
     </>
   )
 }

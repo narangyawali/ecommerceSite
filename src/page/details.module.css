@@ -42,3 +42,7 @@ div >h2{
     width: 60px;
     height: 35px;
 }
+.float{
+    float: right;
+    margin-right: 15px;
+}
