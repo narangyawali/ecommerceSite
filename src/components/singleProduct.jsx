@@ -23,7 +23,7 @@ const handleClick=(e,id)=>{
     <Link to="/details"> 	
     <div className= {styles.card} onClick={e=> handleClick(e,props.item.id)} >
     <h3>{props.item.title}</h3>
-    <img  className={styles.img_card} src={`src/assets/${props.item.img}`} alt="image" />
+    <img  className={styles.img_card} src={`/assets/${props.item.img}`} alt="image" />
     <h3>{props.item.company}</h3>
 			<h4>Price : $ {props.item.price}</h4>
    

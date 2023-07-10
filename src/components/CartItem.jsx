@@ -15,7 +15,7 @@ function CartItem(item) {
   return (<>
     <div className={style.horizontal}>
         <div>
-        <img height={75} width={75} src={`../src/assets/img/product-${item.details.id}.png`} alt="" />
+        <img height={75} width={75} src={`/assets/img/product-${item.details.id}.png`} alt="" />
         </div>
 
 		<h1>{item.details.quantity}</h1>	

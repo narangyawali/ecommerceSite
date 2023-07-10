@@ -22,7 +22,7 @@ const data = useContext(ContextData)
           </ul>
         </div>
         <h1 className={style.center}>{storeProducts[id].title}</h1>
-        <img className= {style} src={`src/assets/img/product-${id }.png`} alt="image" />
+        <img className= {style} src={`/assets/img/product-${id }.png`} alt="image" />
         <div>
           <h2>{storeProducts[id].price} $</h2>
         </div>
