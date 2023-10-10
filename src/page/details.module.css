@@ -5,10 +5,14 @@
 }
 .container{
 	display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 	flex-direction: row;
+    justify-content: space-around;
     padding-bottom: 20px;
+
 }
+
+
 
 ul{
     display: flex;
@@ -26,10 +30,7 @@ img{
     margin: 0px auto;
 }
 
-div >h2{
-    float:right;
-    margin-right: 15px;
-}
+
 .actions{
 	clear: both;
 	border: 1px solid rebeccapurple;
@@ -41,8 +42,4 @@ div >h2{
     font-size: larger;
     width: 60px;
     height: 35px;
-}
-.float{
-    float: right;
-    margin-right: 15px;
 }
