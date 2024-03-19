@@ -11,8 +11,8 @@ import { ContextProvider } from "./context/context";
 
 function App() {
   const [count, setCount] = useState(0);
-
-  return (
+  // const fire= function
+  return(
     <>
     <ContextProvider>
 
